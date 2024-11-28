@@ -15,10 +15,10 @@
                 </div>
                 <div class="list text-xl">
                     <ul class="flex gap-8 ">
-                        <li class="font-bold cursor-pointer hover:text-[#5E3AEE]">Home</li>
-                        <li class="cursor-pointer hover:text-[#5E3AEE]">Projects</li>
-                        <li class="cursor-pointer hover:text-[#5E3AEE]">About</li>
-                        <li class="cursor-pointer hover:text-[#5E3AEE]">Contact</li>
+                        <li class="font-bold cursor-pointer hover:text-[#5E3AEE]"><a href="#">Home</a></li>
+                        <li class="cursor-pointer hover:text-[#5E3AEE]"><a href="#">Projects</a></li>
+                        <li class="cursor-pointer hover:text-[#5E3AEE]"><a href="#">About</a></li>
+                        <li  class="cursor-pointer hover:text-[#5E3AEE]"><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -60,7 +60,6 @@
         </div>
 
         <section class="bg-[#0F1221] text-white hero flex justify-between items-center px-24 h-[510px]">
-
             <div class="">
                 <h1 class="font-bold text-5xl mb-10"><span class="border-t-[27px] border-[#5E3AEE] pt-4">A Bit Abo</span>ut Me...</h1>
                 <p class="font-semibold text-2xl my-4">Hello, My name is Al Amin Khan AKA reboot13. I am a CSE  Undergraduate at Dhaka University. I’m currently learning UI/UX development. Checkout my projects on github.</p>
@@ -69,11 +68,63 @@
             <div class="w-full">
                 <img class="pt-28 w-full" src="Images/Mockup.png" alt="Mockup">
             </div>
-
         </section>
 
-        <br><br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, dolorum! Excepturi animi at autem enim amet laborum, quaerat perferendis voluptas.
+        <section class=" h-[510px] ">
+            <div class="title flex justify-center my-[72px]">
+                <h1 class="text-[60px] leading-tight font-bold text-[#5E3AEE] border-b-4 border-red-300">Skills</h1>
+            </div>
+            <div class="grid grid-cols-4 place-items-center px-[50px] gap-16 font-semibold text-2xl">
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">HTML</p>
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">PHP</p>
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">SQL</p>
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">Python</p>
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">CSS</p>
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">SCSS</p>
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">C/C++</p>
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">Responsive Design</p>
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">JavaScript</p>
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">Typescript</p>
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">Node Js</p>
+                <p class="cursor-pointer border-b-4 border-transparent hover:text-[#5E3AEE] hover:border-red-300 transition-all duration-300 ease-in-out">UI/UX Design</p>
+            </div>
+        </section>
+
+        <footer class="flex flex-col items-center ">
+            <div class="w-full h-[600px] bg-[#5E3AEE] flex justify-between items-center pl-24 py-24">
+                
+                <div class="contact">
+                    <div class="text py-">
+                        <p class="font-bold text-5xl mb-10  text-white">Contact</p>
+                        <p class="font-semibold text-2xl my-4  text-white">Want a website for your brand and business? <br> I design what you desire...</p>
+                    </div>
+                    <div class="image">
+                        <img src="Images/hshs 1.png" alt="Contact">
+                    </div>
+                </div>
+                
+                <div class="form flex flex-col mr-16">
+                    <!-- Name -->
+                    <label for="name" class="block text-2xl font-semibold text-white mb-2 mt-3">Name</label>
+                    <input id="name" type="text" class="w-[650px] p-3.5  bg-white opacity-50 font-semibold focus:outline-none" placeholder="Enter your name"/>
+                  
+                    <!-- Email -->
+                    <label for="email" class="block text-2xl font-semibold text-white mb-2 mt-3">Email</label>
+                    <input id="email" type="email" name="email" class="w-[650px] p-3.5  bg-white opacity-50 font-semibold focus:outline-none" placeholder="Enter your email"/>
+                  
+                    <!-- Message -->
+                    <label for="message" class="block text-2xl font-semibold text-white mb-2 mt-3">Message</label>
+                    <textarea id="message" rows="5" class="w-[650px] p-3.5  bg-white opacity-50 font-semibold focus:outline-none" placeholder="Enter your message"></textarea>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" class="mt-6 w-[650px] text-xl p-3.5 bg-white text-black font-bold hover:bg-black hover:text-white transition-all duration-300 ease-in-out ">Submit</button>
+                </div>
+
+            </div>
+            <div class="my-14">
+                <p class="text-[#5E3AEE] text-2xl font-bold" >@alaminkhan786-dev</p>
+            </div>
+        </footer>
 
     </div>
 </body>
